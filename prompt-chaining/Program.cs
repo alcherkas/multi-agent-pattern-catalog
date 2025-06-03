@@ -1,11 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Microsoft.SemanticKernel;
-using System;
-using System.Threading.Tasks;
+﻿using Microsoft.SemanticKernel;
 
 #pragma warning disable SKEXP0070
-
 
 var kernel = Kernel.CreateBuilder()
     .AddOllamaChatCompletion("granite3.2", new Uri("http://localhost:11434"))
